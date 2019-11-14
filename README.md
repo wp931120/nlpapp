@@ -34,7 +34,7 @@
 
 ### 算法部分
 + 自动写词机器人的算法部分主要借鉴苏剑林大神的这篇博客https://spaces.ac.cn/archives/6933,
-+ 阅读理解机器人的的算法部主要借鉴苏剑林大神的这两篇博客https://spaces.ac.cn/archives/6736,https://spaces.ac.cn/archives/5409
++ 阅读理解机器人的的算法部主要借鉴苏剑林大神的这两篇博客https://spaces.ac.cn/archives/6736, https://spaces.ac.cn/archives/5409
 + 建议大家仔细研读一下博客和代码
 
 ### 部署部分
