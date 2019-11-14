@@ -26,6 +26,10 @@
       启动容器采用 docker run -d -p 8890:8890 nlpweb:v1  
 
 
+如果你只想体验一下项目的效果,我已经制作了一份镜像(2.72G,有点大)上传 到百度云上,链接是：
+下载下来后运行 docker load -i nlpweb_v1.tar 加载镜像
+然后使用 docker run -d -p 8890:8890 nlpweb_v1  你就可以在本机的localhost:8890上访问此服务了  
+
 ### 算法部分
 + 自动写词机器人的算法部分主要借鉴苏剑林大神的这篇博客https://spaces.ac.cn/archives/6933,
 + 阅读理解机器人的的算法部主要借鉴苏剑林大神的这篇博客https://spaces.ac.cn/archives/6736,
@@ -35,6 +39,7 @@
 + 前端技术 bootstrap,js,css
 + 后端技术 flask
 + docker容器化部署
+
 
 # webapp 演示部分
 
