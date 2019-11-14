@@ -14,7 +14,12 @@
 + 训练好的模型会放在models文件夹中
 + app.py ci.py mc.py 是后端部分
 
-#### 由于模型太大无法上传，如果想体验的同学，直接clone项目，在运行train里面的两个ipython文件，生成模型后，按照上述目录的模型的文件名保存到models文件夹中，运行python app.py 即可启动服务 
+#### 运行项目
+
++ 由于模型太大无法上传，如果想体验的同学，首先clone项目
++ 环境配置 首先 pip install git+https://www.github.com/bojone/bert4keras.git这个库，然后pip install -r requirements.txt
++ 环境配置好之后在运行train里面的两个ipython文件训练生成模型文件
++ 然后按照上述目录的模型的文件名保存到models文件夹中，运行python app.py 即可启动服务 
 
 ### 算法部分
 + 自动写词机器人的算法部分主要借鉴苏剑林大神的这篇博客https://spaces.ac.cn/archives/6933,
