@@ -19,9 +19,10 @@
 + 环境配置 首先 pip install git+https://www.github.com/bojone/bert4keras.git 这个库,然后pip install -r requirements.txt 安装项目依赖
 + 环境配置好之后在运行train里面的两个ipython文件训练生成模型文件
 + 然后按照上述目录的模型的文件名保存到models文件夹中，运行python app.py 即可启动服务 
+&emsp;
 + 完成上述过程后你可以以容器化的方式使用docker部署你的webapp<br/>
-      制作镜像命令是docker build -t nlpweb:v1 .<br/>
-      启动容器采用 docker run -d -p 8890:8890 nlpweb:v1<br/>  
+ &nbsp;&nbsp;制作镜像命令是docker build -t nlpweb:v1 .<br/>
+ &nbsp;&nbsp;启动容器采用 docker run -d -p 8890:8890 nlpweb:v1<br/>  
 
 ### docker一键部署机器人项目
 + 如果你只想体验一下项目的效果,我已经制作了一份docker镜像(2.72G,有点大)上传 到百度云上,链接是：
