@@ -4,8 +4,6 @@
 + 由于对基于深度学习的自然语言处理技术较为感兴趣，于是用bert训练了两个有趣的机器人————自动写词机器人和阅读理解机器人
 + 算法部分主要还是借鉴了苏剑林**苏神的项目https://github.com/bojone** 
 
-# 项目技术
-
 ### 项目目录
 ![project](/img/project.png)
 + 其中train目录下是模型训练脚本，包含训练数据
@@ -25,10 +23,12 @@
       制作镜像命令是docker build -t nlpweb:v1 .
       启动容器采用 docker run -d -p 8890:8890 nlpweb:v1  
 
+### docker一键部署机器人项目
++ 如果你只想体验一下项目的效果,我已经制作了一份docker镜像(2.72G,有点大)上传 到百度云上,链接是：
++ 下载下来后运行 docker load -i nlpweb_v1.tar 加载镜像
++ 然后使用 docker run -d -p 8890:8890 nlpweb:v1  你就可以在本机的localhost:8890上访问此服务了  
 
-如果你只想体验一下项目的效果,我已经制作了一份镜像(2.72G,有点大)上传 到百度云上,链接是：
-下载下来后运行 docker load -i nlpweb_v1.tar 加载镜像
-然后使用 docker run -d -p 8890:8890 nlpweb_v1  你就可以在本机的localhost:8890上访问此服务了  
+# 项目详情
 
 ### 算法部分
 + 自动写词机器人的算法部分主要借鉴苏剑林大神的这篇博客https://spaces.ac.cn/archives/6933,
@@ -39,7 +39,6 @@
 + 前端技术 bootstrap,js,css
 + 后端技术 flask
 + docker容器化部署
-
 
 # webapp 演示部分
 
