@@ -5,6 +5,11 @@
 + 自动写词机器人和阅读理解机器人
 # 项目技术
 ### 项目目录
+![project](/img/project.png)
++ 其中train目录下时模型训练，包含训练数据
++ stastic和template是前端部分
++ 训练好的模型会放在models文件中
++ app.py ci.py mc.py 是后端部分
 
 ### 算法部分
 + 自动写词机器人的算法部分主要借鉴苏剑林大神的这篇博客https://spaces.ac.cn/archives/6933,
