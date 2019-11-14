@@ -10,7 +10,7 @@
 ![project](/img/project.png)
 + 其中train目录下时模型训练，包含训练数据
 + stastic和template是前端部分
-+ 预训练的bert权重从https://github.com/ymcui/Chinese-BERT-wwm下载的RoBERTa-wwm-ext的版本
++ 预训练的bert权重的下载地址是https://github.com/ymcui/Chinese-BERT-wwm
 + 训练好的模型会放在models文件夹中
 + app.py ci.py mc.py 是后端部分
 
