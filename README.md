@@ -58,6 +58,5 @@
 ![generate_ans](/img/mc2.png)
 
 # TO DO
-+ 采用容器化技术docker实现项目的部署
 + 增加更多的NLP相关的机器人
 
