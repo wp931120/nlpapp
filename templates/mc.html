@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NLP </title>
+    <meta name="viewport" contentAPP="width=device-width, initial-scale=1.0">
+    <title>Thought of Python</title>
+    <link href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../static/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="bg" align="center">
+    <p style="font-size:80px">Magic of NLP</p>
+</div>
+<div class="container">
+    <ul class="nav navbar-brand nav-justified">
+      <li class="active"><a href="{{ url_for('generate_ci') }}">宋词生成</a></li>
+      <li><a href="{{ url_for('machine_read') }}">机器阅读理解</a></li>
+    </ul>
+    <div class="row col-sm-6 col-md-offset-3">
+        <textarea class="form-control"  rows="10" id = "doc"></textarea>
+    </div>
+
+    <div class="row col-sm-6 col-md-offset-3">
+        <textarea class="form-control"  rows="1" id = "qry"></textarea>
+    </div>
+
+    <div class="row" col-sm-6 col-md-offset-3>
+        <button type="button" class="btn btn-default btn-success col-md-offset-5" id = "gen_ans">生成答案</button>
+    </div>
+
+    <div class="row col-sm-6 col-md-offset-3">
+        <textarea class="form-control"  rows="1" id="ans"></textarea>
+    </div>
+
+</div>
+<script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="../static/jquery-2.2.1.min.js"></script>
+<script src="../static/main.js"></script>
+</body>
+</html>

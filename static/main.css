@@ -1,0 +1,29 @@
+textarea{
+  resize: none;
+}
+
+.row {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+.bg{
+  color: white;
+ background-color:midnightblue;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#gen_ans{
+  position: relative;
+  left: 50px;
+}
+#gen_ci{
+  position: relative;
+  left: 60px;
+
+}
