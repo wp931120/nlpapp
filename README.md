@@ -21,7 +21,9 @@
 + 环境配置 首先 pip install git+https://www.github.com/bojone/bert4keras.git 这个库,然后pip install -r requirements.txt 安装项目依赖
 + 环境配置好之后在运行train里面的两个ipython文件训练生成模型文件
 + 然后按照上述目录的模型的文件名保存到models文件夹中，运行python app.py 即可启动服务 
-+ 完成上述过程后你可以使用docker部署你的webapp ： 命令是docker build -t nlpweb:v1 .
++ 完成上述过程后你可以以容器化的方式使用docker部署你的webapp ：
+      制作镜像命令是docker build -t nlpweb:v1 .
+      启动容器采用 docker run -d -p 8890:8890 nlpweb:v1  
 
 
 ### 算法部分
