@@ -43,7 +43,7 @@
 # webapp 演示部分
 
 ### 自动写词机器人
-##### 其中第一个form填**词牌名**，格式是——**“菩萨蛮：”** , 第二个form填beamsearch解码器的**topk值**,不同的topk会生成不同的词。
+##### 其中第一个form填**词牌名**，格式是——**“菩萨蛮：”** , 第二个form填beamsearch解码器的**topk值**,不同的topk很大可能会生成不同的词。
 当beamsearch的 topk = 6时
 ![generate_ci](/img/ci1.png)
 当beamsearch的 topk = 10时
