@@ -25,7 +25,7 @@
 
 ### 如果你只想体验一下项目的效果,可以使用docker一键部署机器人项目
 + 首先确保本机已经安装docker
-+ 我已经制作了一份docker镜像(2.72G,有点大)上传 到百度云上,链接是链接：https://pan.baidu.com/s/1FLq7cHjYub3ejJ5mdlFqbQ 
++ 我已经制作了一份docker镜像(包含两个bert模型，所以有2.72G,有点大)上传 到百度云上,链接是链接：https://pan.baidu.com/s/1FLq7cHjYub3ejJ5mdlFqbQ 
 提取码：0ucz 
 + 下载下来后运行 docker load -i nlpweb_v1.tar 加载镜像
 + 然后使用 docker run -d -p 8890:8890 nlpweb:v1  你就可以在本机的localhost:8890上访问此服务了  
