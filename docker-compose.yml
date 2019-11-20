@@ -1,0 +1,12 @@
+version: '2' # 表示该 Docker-Compose 文件使用的是 Version 2 file
+services:
+    web:
+        image: "nlpweb:v1"
+        ports:
+            - "8890:8890"
+    nginx:
+        build: "./nginx" 
+        ports: 
+            - "80:80"
+        links: 
+            - "web" 
