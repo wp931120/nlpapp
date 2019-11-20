@@ -28,7 +28,7 @@
 + 我已经制作了一份docker镜像(包含两个bert模型，所以有2.72G,有点大)上传 到百度云上,链接是链接：https://pan.baidu.com/s/1FLq7cHjYub3ejJ5mdlFqbQ 
 提取码：0ucz 
 + 下载下来后运行 docker load -i nlpweb_v1.tar 加载镜像
-+ 然后使用 docker run -d -p 8890:8890 nlpweb:v1  你就可以在本机的localhost:8890上访问此服务了  
++ 然后使用 docker run -d -p 8890:8890 nlpweb:v1  你就可以在本机的localhost:8890上访问此服务了 ;或者使用docker-compose -f docker-compose.yml up -d 可以启动nginx 反向代理服务。
 
 # 项目详情
 
@@ -40,7 +40,7 @@
 ### 部署部分
 + 前端技术 bootstrap,js,css
 + 后端技术 flask
-+ docker容器化部署
++ docker容器化部署,nginx 负载均衡
 
 # webapp 演示部分
 
