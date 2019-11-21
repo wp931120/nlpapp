@@ -4,6 +4,7 @@ from flask import  render_template
 import json
 from mc import *
 from ci import *
+from trans import *
 from bert4keras.utils import Tokenizer
 app = Flask(__name__)
 
@@ -30,6 +31,11 @@ dict_path = '/opt/developer/wp/wzcq/roberta_wwm/vocab.txt'
 token_dict = get_token_dict(dict_path)
 tokenizer = OurTokenizer(token_dict)
 
+
+trans_dic_path = '/opt/developer/wp/nlpapp/train/multilingual_L-12_H-768_A-12/vocab.txt'
+token_dict_trans = get_token_dict(trans_dic_path)
+trans_tokenizer = Tokenizer(token_dict_trans)
+
 @app.route('/')
 def hello_world():
     data = {}
@@ -42,6 +48,10 @@ def machine_read():
 @app.route('/ci')
 def generate_ci():
     return render_template('ci.html')
+
+@app.route('/trans')
+def machine_trans():
+    return render_template('trans.html')
 
 @app.route('/gen_ans',methods=["POST"])
 def gen_ans():
@@ -60,6 +70,16 @@ def gen_ci():
     topk = request.form["topk"]
     seq_model = ci_infer(tokenizer, token_dict)
     ans = seq_model.gen_sent(ci_head,topk=int(topk))
+    result['content'] = ans
+    return json.dumps(result, ensure_ascii=False)
+
+@app.route('/gen_trans',methods=["POST"])
+def gen_trans():
+    result = {}
+    input_ = request.form['input_']
+    topk = request.form["topk"]
+    seq_model = trans_infer(trans_tokenizer, token_dict_trans)
+    ans = seq_model.gen_trans(input_.lower(),topk=int(topk))
     result['content'] = ans
     return json.dumps(result, ensure_ascii=False)
 
