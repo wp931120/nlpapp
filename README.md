@@ -60,9 +60,9 @@
 ### 自动翻译机器人
 ##### 其中第一个form填入**需要翻译的文字**，第二个form填beamsearch解码器的**topk值**,不同的topk很大可能会生成不同的翻译。
 演示1
-![geerate_ans](/img/mc1.png)
+![geerate_ans](/img/trans1.png)
 演示2
-![generate_ans](/img/mc2.png)
+![generate_ans](/img/trans2.png)
 
 
 # TO DO
