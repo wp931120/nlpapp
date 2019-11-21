@@ -6,12 +6,16 @@ var Main = {
             "2017年10月，吴恩达将出任Woebot公司新任董事长，该公司拥有一款同名聊天机器人。")
         $("#qry").html("吴恩达的英文名是什么？")
         $("#cihead").html("菩萨蛮:")
+        $("#input").html("NLP简直太神奇了")
 
         $("#gen_ans").click(function () {
             _this.machine_reading(this)
         });
         $("#gen_ci").click(function () {
             _this.generate_ci(this)
+        });
+        $("#gen_trans").click(function () {
+            _this.translater(this)
         });
 
     },
@@ -46,7 +50,7 @@ var Main = {
         var ci_head = $("#cihead").val();
         var topk = $("#topk").val();
         $.ajax({
-            url: "/gen_ci",
+            url: "/gen_trans",
             type: 'POST',
             data : {'ci_head':ci_head,
                     'topk':topk,
@@ -66,6 +70,33 @@ var Main = {
             success: function (data) {
                  console.log(data)
                  $("#cibody").html(data.content)
+            },
+        });
+    },
+    translater: function () {
+        var input_ = $("#input").val();
+        var topk = $("#topk_trans").val();
+        $.ajax({
+            url: "/gen_trans",
+            type: 'POST',
+            data : {'input_':input_,
+                    'topk':topk,
+            },
+            dataType:"json",
+            beforeSend: function () {
+                if (input_ == ""||topk==""){
+                    alert('请输入需要翻译的句子和topk')
+                    return false
+                }else {
+                    $("#trans_res").html("翻译中")
+                }
+            },
+            error :function(){
+                alert('error')
+            },
+            success: function (data) {
+                 console.log(data)
+                 $("#trans_res").html(data.content)
             },
         });
     },
