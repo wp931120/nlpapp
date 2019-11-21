@@ -26,8 +26,8 @@ class trans_infer:
 
     def gen_trans(self,s,
                  topk=10,
-                 max_input_len = 8,
-                 max_output_len=100,):
+                 max_input_len = 256,
+                 max_output_len= 256,):
         """beam search解码
         每次只保留topk个最优候选结果；如果topk=1，那么就是贪心搜索
         """
