@@ -6,7 +6,7 @@
 
 ### 项目目录
 ![project](/img/project.png)
-+ 其中train目录下是模型训练脚本，包含训练数据（包括阅读理解数据集 ： https://github.com/ymcui/cmrc2018 和诗词数据集：https://github.com/chinese-poetry/chinese-poetry
++ 其中train目录下是模型训练脚本，包含训练数据（包括阅读理解数据集 ： https://github.com/ymcui/cmrc2018 和诗词数据集：https://github.com/chinese-poetry/chinese-poetry  中英翻译数据集： )
 + stastic和template是前端部分
 + 预训练的bert权重的下载地址是https://github.com/ymcui/Chinese-BERT-wwm
 + 训练好的模型会放在models文件夹中
