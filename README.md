@@ -1,7 +1,7 @@
 # NLP WEBAPP
 
 # 项目背景 
-+ 由于对基于深度学习的自然语言处理技术较为感兴趣，于是用bert训练了两个有趣的机器人————自动写词机器人和阅读理解机器人
++ 由于对基于深度学习的自然语言处理技术较为感兴趣，于是用bert训练了三个有趣的机器人————自动写词机器人，阅读理解机器人 和自动翻译机器人
 + 算法部分主要还是借鉴了和学习了苏剑林**苏神的项目https://github.com/bojone  和 博客 https://spaces.ac.cn/ ，** 这里还是很感谢苏神对我潜移默化的影响。
 
 ### 项目目录
@@ -56,6 +56,14 @@
 ![geerate_ans](/img/mc1.png)
 演示2
 ![generate_ans](/img/mc2.png)
+
+### 自动翻译机器人
+##### 其中第一个form填入**需要翻译的文字**，第二个form填beamsearch解码器的**topk值**,不同的topk很大可能会生成不同的翻译。
+演示1
+![geerate_ans](/img/mc1.png)
+演示2
+![generate_ans](/img/mc2.png)
+
 
 # TO DO
 + 增加更多的NLP相关的机器人
