@@ -16,6 +16,7 @@
 
 + 由于模型太大无法上传，如果想体验的同学，首先clone项目
 + 然后去https://github.com/ymcui/Chinese-BERT-wwm 这里下载BERT预训练的权重,解压后放到项目中
++ 如果要训练翻译机器人则需要到 https://github.com/google-research/bert 下载 多语言的预训练权重
 + 环境配置 首先 pip install git+https://www.github.com/bojone/bert4keras.git 这个库,然后pip install -r requirements.txt 安装项目依赖
 + 环境配置好之后在运行train里面的两个ipython文件训练生成模型文件
 + 然后按照上述目录的模型的文件名保存到models文件夹中，运行python app.py即可启动服务，之后在本机的localhost:8890上访问此服务了  
