@@ -1,5 +1,5 @@
 Keras==2.3.1
 keras-bert==0.80.0
-numpy==1.16.5
+numpy==1.22.0
 flask
 tensorflow==1.14.0
